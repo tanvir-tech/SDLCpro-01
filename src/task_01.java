@@ -7,7 +7,7 @@ public class task_01 {
     public static void main(String[] args) {
 
         ArrayList<Citizen> citizens = new ArrayList<>();
-        HashMap<Integer, Integer> hashMap = new HashMap<>();
+        TreeMap<Integer, Integer> treeMap = new TreeMap<>();
 
         try{
             File file = new File("C:\\Users\\tanvi\\IdeaProjects\\SDLCpro-01\\src\\citizen.txt");
@@ -31,7 +31,7 @@ public class task_01 {
                 //insert into map(NID,Passport)
                 for(Citizen c : citizens){
                     //check if multiple passport is available 
-                    hashMap.put(c.NID,c.passport);
+                    treeMap.put(c.NID,c.passport);
                 }
 
             }
